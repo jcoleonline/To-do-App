@@ -1,0 +1,66 @@
+body{
+    background: #0C4F94;
+background: -moz-linear-gradient(left, #0C4F94 0%, #2BA8FA 51%, #196394 100%);
+background: -webkit-linear-gradient(left, #0C4F94 0%, #2BA8FA 51%, #196394 100%);
+background: linear-gradient(to right, #0C4F94 0%, #2BA8FA 51%, #196394 100%);
+}
+
+.Wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.Wrapper>*{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+header{
+    background: rgb(255, 255, 255, 0.5); 
+    min-height: 120px;
+    
+}
+
+.main{
+    text-align: left;
+    background-color: rgb(255, 255, 255, 0.5);
+    min-height: 300px;
+    
+    }
+
+.aside1{
+    background: rgb(255, 255, 255, 0.5);
+}
+
+.aside2{
+    background: rgb(255, 255, 255, 0.5);
+}
+
+ @media all and (min-width: 800px){
+    .main{
+        flex: 3;
+    }
+
+    .aside1{
+        order: 1;
+    }
+
+    .aside2{
+        order: 2;
+    }
+
+   .main
+    {
+        order: 2;
+    } 
+   
+}
+
+@media all and (min-width: 600px){
+    .aside{
+        flex: 1;
+    }
+} 

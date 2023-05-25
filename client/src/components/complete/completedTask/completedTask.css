@@ -1,0 +1,15 @@
+.completeList{
+    padding-left: 0;
+        }
+    
+    .completeItem{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    }
+
+    .listWrapper{
+        padding: 0px;
+    }
